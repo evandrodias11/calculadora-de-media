@@ -34,3 +34,31 @@ body {
   top: 10px;
   right: 10px;
 }
+
+input {
+  margin: 12px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+label {
+  border-radius: 3px;
+  background-color: #92a8d1;
+  color: #034f84;
+}
+
+button {
+  margin-top: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+#resultado {
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 5px;
+  width: 350px;
+  background-color: #92a8d1;
+  color: #034f84;
+}
