@@ -1,16 +1,26 @@
-var nome = "Evandro";
-var notaPrimeiroBimestre = 9.4566;
-var notaSegundoBimestre = 7.2345;
-var notaTerceiroBimestre = 4.65675;
-var notaQuartoBimestre = 2.2678;
-var notaFinal =
-  (notaPrimeiroBimestre +
-    notoSegundoBimestre +
-    notoTerceiroBimestre +
-    notoQuartoBimestre) /
-  4;
+function Calcular() {
+  var nota1 = document.getElementById("nota1");
+  var notaPrimeiroBimestre = nota1.value;
+  var nota2 = document.getElementById("nota2");
+  var notaSegundoBimestre = nota2.value;
+  var nota3 = document.getElementById("nota3");
+  var notaTerceiroBimestre = nota3.value;
+  var nota4 = document.getElementById("nota4");
+  var notaQuartoBimestre = nota4.value;
+  var notaFinal =
+    (Number(notaPrimeiroBimestre) +
+      Number(notaSegundoBimestre) +
+      Number(notaTerceiroBimestre) +
+      Number(notaQuartoBimestre)) /
+    4;
 
-var notaFormatada = notaFinal.toFixed(1);
+  var notaFormatada = notaFinal.toFixed(1);
 
-console.log("bem vindo " + nome);
-console.log(notaFormatada);
+  if (notaFormatada >= 6) {
+    return (document.getElementById("resultado").innerHTML =
+      "Sua média final é: " + notaFormatada + ", você foi aprovado !");
+  } else {
+    return (document.getElementById("resultado").innerHTML =
+      "Sua média final é: " + notaFormatada + ", você foi reprovado !");
+  }
+}
