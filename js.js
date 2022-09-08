@@ -1,17 +1,17 @@
 function Calcular() {
   var nota1 = document.getElementById("nota1");
-  var notaPrimeiroBimestre = nota1.value;
+  var notaPrimeiroBimestre = parseFloat(nota1.value);
   var nota2 = document.getElementById("nota2");
-  var notaSegundoBimestre = nota2.value;
+  var notaSegundoBimestre = parseFloat(nota2.value);
   var nota3 = document.getElementById("nota3");
-  var notaTerceiroBimestre = nota3.value;
+  var notaTerceiroBimestre = parseFloat(nota3.value);
   var nota4 = document.getElementById("nota4");
-  var notaQuartoBimestre = nota4.value;
+  var notaQuartoBimestre = parseFloat(nota4.value);
   var notaFinal =
-    (Number(notaPrimeiroBimestre) +
-      Number(notaSegundoBimestre) +
-      Number(notaTerceiroBimestre) +
-      Number(notaQuartoBimestre)) /
+    (notaPrimeiroBimestre +
+      notaSegundoBimestre +
+      notaTerceiroBimestre +
+      notaQuartoBimestre) /
     4;
 
   var notaFormatada = notaFinal.toFixed(1);
