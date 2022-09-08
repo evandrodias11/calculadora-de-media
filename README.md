@@ -1,6 +1,6 @@
 # Calculadora de média
 
-Projeto #01 da imersão dev alura, com foco em js
+Projeto 01 da #imersãodev alura, com foco em js
 
 <div>
   <h2> 💻 Tecnologias usadas:</h2>
